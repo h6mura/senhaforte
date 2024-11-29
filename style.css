@@ -1,0 +1,104 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7f71, #c2d9a2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+/* Input */
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Resultados */
+#resultado {
+    margin-top: 30px;
+}
+
+#forcaSenha {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#forcaSenha.red {
+    color: #e74c3c;
+}
+
+#forcaSenha.orange {
+    color: #f39c12;
+}
+
+#forcaSenha.green {
+    color: #2ecc71;
+}
+
+/* Dicas */
+.dicas {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    line-height: 1.5;
+}
